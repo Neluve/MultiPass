@@ -1,0 +1,50 @@
+﻿<html manifest="jmc3">
+<head>
+<title>AutoExploit GoldHen JMC PS4 900</title>
+<style>
+html, body{
+background-color:black;
+margin:auto;
+text-align:center;
+color=#73FFFF;font-family: 'juma';text-align:center;margin:0;overflow:hidden;}
+.info{position:relative;top:39%;}
+#progress {
+ font-weight:bold;
+color=#00FFF1;
+ text-shadow: 4px 4px 4px black;
+ font-size:33px;
+}
+		@font-face{
+			font-family: juma;
+			src: url('juma.ttf');
+}
+</style>
+</head>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));progress.innerHTML="<font color=#90D3FF>Installing...<font color=#73FFFF>" + Percent + "% <font color=#C2F0A1>Kompleted"};
+function DisplayCacheProgress(){
+setTimeout(function(){progress.innerHTML="<font color=#47D1FF>Cache Installed!";},2000);
+setTimeout(function(){location.reload();},3000);
+}
+window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+<body>
+<div id=progress class=info ></div>
+</body>
+<script type="text/javascript">
+ if(localStorage.getItem("temajmc")==null){
+   localStorage.setItem("temajmc","1.jpg")
+ }
+ document.body.style.background = "url('"+localStorage.getItem("temajmc")+"')"
+ document.body.style.backgroundSize = "100%"
+ var imgs = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","11a.jpg","14.jpg","15.jpg","jmc1.gif","jmc2.gif","jmc3.gif","jmc4.gif","jmc5.gif"];
+
+ function set(i){
+    localStorage.setItem("temajmc",imgs[i])
+    render()
+ 	document.body.style.background = "url('"+imgs[i]+"')"
+ 	document.body.style.backgroundSize = "100%"
+ }
+</script>
+</html>
