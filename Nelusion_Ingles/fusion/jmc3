@@ -1,7 +1,6 @@
 CACHE MANIFEST 
 # v1.1 Self-Host 
 
-
 1.jpg
 10.jpg
 11.jpg
@@ -21,6 +20,7 @@ app2usb.bin
 backupdb.bin
 BeefQueefMod138.bin
 binloader.js
+cache.html
 disableupdates.bin
 enablebrowser.bin
 enableupdates.bin
@@ -28,7 +28,6 @@ exploit.js
 frontend.js
 ftp.bin
 GET.html
-goldhen.bin
 goldhen225b2.bin
 historyblocker.bin
 index.html
@@ -38,6 +37,7 @@ jb.html
 jmc.gif
 jmc1.gif
 jmc2.gif
+jmc3
 jmc3.gif
 jmc4.gif
 jmc5.gif
