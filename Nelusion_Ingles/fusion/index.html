@@ -103,21 +103,14 @@ header a:hover{
         font-size: 5em;
     }
 
-    #karga-nelu .container{
-        margin-top: 0px;
-        display: flex;
-        background-image: url("");
-        justify-content: space-evenly;
-    }
-
 
     #karga-nelu .img-container{
+        background-repeat: no-repeat;
 	background-image: url("ok.png");
         margin-top: -180px;
-        margin-left: 75px;
-        background-position: center;
+        margin-left: 90px;
         height: 369px;
-        width: 329px;  
+        width: 929px;  
     }
 
     #caracteristicas{
@@ -249,7 +242,7 @@ right: -220px; background: transparent; padding: 145px 150px; color: #f77c19; wh
   text-align: center;
   background: linear-gradient(
     to right, 
-    #50e9b1, #c0e95e, #e9b35d, #e94c48, #e96745, #e9b35d, #c0e95e, #50e9b1);
+    #44C1D6, #47B5FF, #9EDEFF, #00F6FF, #90D3FF, #9EDEFF, #47B5FF, #44C1D6);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -290,7 +283,7 @@ if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
 <div class="top" ><br><br><br>
 <div class="jmc"><a onMouseOver="progress.innerHTML='MultiCharger<font color=#6ac4e9> FirmWare <font color=#94e966>9.00'"; onmouseout="progress.innerHTML=' '" onclick="goldhen()" href="#karga-nelu" data-tooltip=".: by SISTR0 :."></a>
   </section><br><br><br>
-<div style='font-size:20px;text-align:center;padding-top: 12px;color:#FFB736;'>.: GoldHen <font color=#B9FFCD>V. <font color=#62e1f2>2.2.5.b2 :. 
+<div style='font-size:20px;text-align:center;padding-top: 0px;color:#FFB736;'>.: GoldHen <font color=#B9FFCD>V. <font color=#62e1f2>2.2.5.b2 :. 
     <section id="karga-nelu"><br><br><br><br><a style="font-size:12px;padding-top: 0px;text-align:center"><h1><font color=#73FFFF>...★☆★...<font color=#FFB736>Gold<font color=#90D3FF>Hen  <font color=#C2F0A1>Loaded<font color=#FCE4D1>!<font color=#73FFFF>...★☆★...</h1></a>
         <div class="container">
             <div class="img-container"></div><br><br><br><br><br>
@@ -366,11 +359,12 @@ function load_poc(){
 function jbdone() {
 progress.innerHTML="<font color=#62e1f2>...Proccesing<font color=#9affd1>...HackS...<font color=#90BEDA>Wait...";
 window.progress.innerHTML="<font color=#29e3b5>System Hacked!";
+all.style.display = "block";
 }
 
 function allset() {
+window.progress.innerHTML= LoadedMSG;
 window.progreso.innerHTML= LoadedMSG
-window.progress.innerHTML= LoadedMSG
 }
 
 function Binset() {
@@ -379,9 +373,8 @@ alert("Payload Loaded! Send Payloads to Port 9020");
 }
 
 function Mset() {
-progress.innerHTML="<font color=#62e1f2>...Proccesing<font color=#9affd1>...HackS...<font color=#90BEDA>Wait...";
-window.progress.innerHTML="<font color=#29e3b5>System Hacked!";
-all.style.display = "block";
+window.progreso.innerHTML="Payload Loaded! Send Payloads to Port 9021";
+alert("Payload Loaded! Send Payloads to Port 9021");
 }
 
 function runScript(what)
