@@ -1,64 +1,50 @@
+
 html, body{
-margin: 0;
-padding: 0;
-    text-align: center;
-    justify-content: center;
-margin:auto;
-font-family: 'juma';
+font-family:juma;
+font-weight:lighter;
 text-align:center;
-}
-.texto {
-    top: 82%;
-    margin: 5px;
-    padding-left: 0%;
-	text-align:center;
-	font-size:28px;
-	color:#90BEDA;
-	background: transparent;
-	font-weight:bold;
+color:#ADECFF;
+background-size:cover;
+font-size:28px;
+text-align:center;
+overflow:hidden;}
+
 }
 .msgs {
-    top: 82%;
+    position: relative;
+    top: 80%;
+    padding-left: 32%;
     margin: 0px;
-    padding-left: 0%;
 	text-align:center;
-	font-size:28px;
+	font-size:22px;
 	color:#90BEDA;
-	background: transparent;
-	font-weight:bold;
 }
-.texto2 {
-    top: 84%;
-    margin: 0px;
-    padding-left: 0%;
-	text-align:center;
-	font-size:33px;
-	color:#90BEDA;
-	font-weight:bold;
-	background: transparent
-}
-.msgs2 {
-    top: 84%;
-    margin: 0px;
-    padding-left: 0%;
-	text-align:center;
-	font-size:33px;
-	color:#90BEDA;
-	font-weight:bold;
-	background: transparent
+.info{
+ font-size:38px;
+text-align:center;
+color:#90BEDA;
 }
 		@font-face{
 			font-family: juma;
-			src: url('juma3.ttf');
+			src: url('juma.ttf');
+}
+#clock{
+position: relative;
+float:right;
+margin-right:1%;
+margin-top: 5px;
+font-size:28px;
+font-family:juma;
+color:#576B99;
 }
 .Karga_Neluve{
     width: 100%;
-    height: 70%;
+    height: 78%;
     overflow: hidden;
     position: 100%;
-	background-image: url(2.png);
     background-position: center;
     background-repeat: no-repeat;
+	background-image: url(2.png);
     background-size: 35%;
     text-align: center;
     justify-content: center;
@@ -77,4 +63,27 @@ text-align:center;
     text-align: center;
     justify-content: center;
     }
+}
+#gradienttext1 {
+  line-height: 100%;
+    margin: 0;
+    padding: 25px 30px;
+	font-family: juma;
+    font-weight: bold;
+    font-size: 2.0em;
+  text-align: center;
+  font-size: 24px;
+  background: linear-gradient(
+    to right, 
+    #4D0099, #1691FF, #A3C5F8, #0AB6FF, #10A5CE, #0F0096, #4B027C, #4D0099);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 1000px;
+  background-position: center 0%;
+  animation: background-slide 100s infinite linear;
+}
+@keyframes background-slide {
+100% {
+background-position: -8160px;
 }
